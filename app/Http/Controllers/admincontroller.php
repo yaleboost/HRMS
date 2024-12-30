@@ -149,8 +149,7 @@ public function updatesemesterconfirm(Request $request,$id){
 
 public function checkMissingResults()
 {
-    updateStatus();
-    // Fetch semesters with missing results and deadlines within the next 5 days
+    $this->updateStatus();    // Fetch semesters with missing results and deadlines within the next 5 days
     $semesters = Semester::where('status', 'active')  // Only active semesters
         ->whereDate('end_date', '>=', now()->toDateString())   // Ensure the end date is today or in the future
         ->whereDate('end_date', '<=', now()->addDays(30)->toDateString()) // Ensure end date is within the next 5 days
