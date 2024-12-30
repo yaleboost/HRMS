@@ -59,3 +59,4 @@ Route::get('/failsemester', [AdminController::class, 'showFailedSemesters'])->na
 
 Route::get('/failed', [AdminController::class, 'getFailedSemesters'])->name('semesters.failed');
 
+ 

@@ -207,7 +207,7 @@ public function updateStatus()
                                 ->get();
     return view('semester.failed', compact('failedSemesters'));
 }
-
+ 
 }
 
 

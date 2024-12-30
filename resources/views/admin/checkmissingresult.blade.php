@@ -60,7 +60,7 @@
                         </span>
                     </td>
                     <td>
-                    <a href="javascript:void(0);" onclick="notifyUser({{ $semester->id }})" class="btn btn-info btn-sm">
+                    <a href="" onclick="notifyUser({{ $semester->id }})" class="btn btn-info btn-sm">
                         Notify
                     </a>
                 </td>
