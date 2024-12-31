@@ -18,6 +18,7 @@ class admincontroller extends Controller
         $data->lname=$request->lname;
         $data->email=$request->email;
         $data->number=$request->number;
+        $data->employee_type=$request->employee_type;
         $data->datebirth=$request->datebirth;
         $data->gender=$request->gender;
         $data->position=$request->position;

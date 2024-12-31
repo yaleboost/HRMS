@@ -29,7 +29,7 @@
             </div>
             
 
-           @include('admin.fotter');
+         <!-- Footer Area Here -->
 
         </div>
         <!-- End of Content Wrapper -->

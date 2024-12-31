@@ -20,6 +20,14 @@
     </div>
 </form>
 
+
+<x-app-layout >
+<div style="width: 10px; height: 3px; background-color: red;"></div>
+
+</x-app-layout>
+
+
+
 <!-- Topbar Navbar -->
 <ul class="navbar-nav ml-auto">
 

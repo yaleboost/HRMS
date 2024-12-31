@@ -106,7 +106,17 @@
                                         <div class="col-sm-6">
                                             <input type="text" name="contactphone" class="form-control form-control-user" id="exampleLastName"
                                                 placeholder="Contact phone" required>
-                                        </div>                          
+                                        </div>  
+                                                               
+                                    </div>
+                                    <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <select name="employee_type" id="" class="form-control" required>
+                                                <option value="fulltime">full Time</option>
+                                                <option value="contract">Contrat</option>
+                                                <option value="freelance">freelancer </option>
+                                            </select>
+                                        </div>                
                                     </div>
                                     </div>
                                     </div>
@@ -116,6 +126,10 @@
                                 </form>
                                 <hr>
                             
+                              
+
+
+
                             </div>
                         </div>
                     </div>

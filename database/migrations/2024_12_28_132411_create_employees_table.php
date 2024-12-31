@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('number')->unique();  // Employee number or phone number, should be unique
             $table->date('datebirth');           // Date of birth (use date type)
             $table->enum('gender', ['male', 'female', 'other']); // Gender (use enum for consistency)
+            $table->string('employee_type');
             $table->string('position');        // Job position
             $table->string('department');      // Department the employee belongs to
             $table->decimal('salary', 8, 2);   // Salary (use decimal for accurate financial data)
