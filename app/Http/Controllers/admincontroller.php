@@ -208,7 +208,17 @@ public function updateStatus()
                                 ->get();
     return view('semester.failed', compact('failedSemesters'));
 }
- 
+ public function viewdepartment(){
+    return view('admin.adddepartment');
+ }
+ public function adddepartment(Request $request){
+    $data=new department;
+     $data->department_name = $request->department_name;
+     $data->department_head = $request->department_head;
+     $data->location = $request->location;
+     $data->contact_number = $request->contact_number;
+     $data->description = $request->description;
+ }
 }
 
 
