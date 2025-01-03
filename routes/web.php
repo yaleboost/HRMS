@@ -29,23 +29,29 @@ route::get('/updateemployee/{id}',[admincontroller::class,'updateemployee']);
 
 route::POST('/updateemployeeconirm/{id}',[admincontroller::class,'updateemployeeconirm']);
 
-route::get('/viewescholarship',[admincontroller::class,'viewescholarship']);//for regstering purpose
+route::get('/viewscholarship',[admincontroller::class,'viewescholarship']);//for regstering purpose
 route::POST('/addscholarship',[admincontroller::class,'addscholarship']);
 
-route::get('/viewscholarship',[admincontroller::class,'viewscholarship']);//for display scholarship data
+route::get('/viewescholarship',[admincontroller::class,'viewscholarship']);//for display scholarship data
 route::get('/deletescholarship/{id}',[admincontroller::class,'deletescholarship']);//deleting scholarship
  
 route::get('/updatescholarship/{id}',[admincontroller::class,'updatescholarship']);//for feaching data and pass to front end
-
 route::POST('/updatescholarshipconfirm/{id}',[admincontroller::class,'updatescholarshipconfirm']);//for real update scholarship
 
-route::get('/viewesemester',[admincontroller::class,'viewesemester']);//for display semester data
+route::get('/viewsemester',[admincontroller::class,'viewesemester']);//for display semester data
 route::POST('/addsemester',[admincontroller::class,'addsemester']);
 route::get('/viewssemester',[admincontroller::class,'viewssemester']);//for display semester data
 route::get('/deletesemester/{id}',[admincontroller::class,'deletesemester']);//deleting scholarship
 route::get('/updatesemester/{id}',[admincontroller::class,'updatesemester']);//for feaching data and pass to front end
-
 route::POST('/updatesemesterconfirm/{id}',[admincontroller::class,'updatesemesterconfirm']);//for real update semester
+
+route::get('/viewdepartment',[admincontroller::class,'viewdepartment']);//for display semester data
+route::POST('/adddepartment',[admincontroller::class,'adddepartment']);//for display semester data
+route::get('/viewddepartment',[admincontroller::class,'viewddepartment']);
+route::get('/deletedepartment/{id}',[admincontroller::class,'deletedepartment']);//deleting scholarship
+route::get('/updatedepartment/{id}',[admincontroller::class,'updatedepartment']);//for feaching data and pass to front end
+route::POST('/updatedepartmentconfirm/{id}',[admincontroller::class,'updatedepartmentconfirm']);//for real update semester
+
 
 
 route::get('/checkmissingresult',[admincontroller::class,'checkmissingresult']);//for checking missing result

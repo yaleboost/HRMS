@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
+<base href="/public">
 @include('admin.css')
 
 <body id="page-top">
@@ -89,53 +89,47 @@
                                         </div>                          
                                     </div>
                                     <div class="form-group row">
-                                        <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" name="department" class="form-control form-control-user" id="exampleFirstName"
-                                                placeholder="Departmnet" required>
-                                        </div>
+                                   
                                         <div class="col-sm-6">
                                             <input type="text" name="salary" class="form-control form-control-user" id="exampleLastName"
                                                 placeholder="Salary" required>
-                                        </div>                          
-                                    </div>
-                                    <div class="form-group row">
+                                        </div>  
                                         <div class="col-sm-6 mb-3 mb-sm-0">
                                             <input type="text" name="contactname" class="form-control form-control-user" id="exampleFirstName"
                                                 placeholder="Contact Name" required>
-                                        </div>
+                                        </div>                        
+                                    </div>
+                                    <div class="form-group row">
                                         <div class="col-sm-6">
                                             <input type="text" name="contactphone" class="form-control form-control-user" id="exampleLastName"
                                                 placeholder="Contact phone" required>
-                                        </div>  
-                                                               
-                                    </div>
-                                    <div class="form-group row">
+                                        </div>    
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <select name="department" id="" class="form-control" required> 
+                                            @foreach ($department as $department)
+                                            <option value="{{ $department->id }}">{{ $department->department_name }}</option>
+                                             @endforeach
+                                            </select>
+                                        </div>           
+                                    </div> 
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                             <select name="employee_type" id="" class="form-control" required>
-                                                <option value="fulltime">full Time</option>
-                                                <option value="contract">Contrat</option>
-                                                <option value="freelance">freelancer </option>
+                                                <option value="fulltime">Full Time</option>
+                                                <option value="contrat">Contrat</option>
+                                                <option value="freelance">freelance</option>
                                             </select>
-                                        </div>                
-                                    </div>
+                                        </div>  
                                     </div>
                                     </div>
                                     <input type="submit" value="Register Scholarship" class="btn btn-primary btn-user btn-block">
                                     <hr>
-                                
                                 </form>
                                 <hr>
-                            
-                              
-
-
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             </div>
             </form>
             </div>

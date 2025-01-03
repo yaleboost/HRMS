@@ -7,6 +7,7 @@
     <meta name="author" content="">
 
     <title>HRMS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pzjw8f+ua7Kw1TIq0Xm0+72wHlHL5E/x5G/JQhch1guT8yyz2+jrXoy95M6u4Gb2" crossorigin="anonymous">
 
     <!-- Custom fonts for this template-->
     <link href="template/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

@@ -53,8 +53,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">ADD Department</a>
-                        <a class="collapse-item" href="utilities-border.html">View Department</a> 
+                        <a class="collapse-item" href="{{url('viewdepartment')}}">ADD Department</a>
+                        <a class="collapse-item" href="{{url('viewddepartment')}}">View Department</a> 
                     </div>
                 </div>
             </li>
@@ -108,7 +108,7 @@
 
 
 
-<li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="{{url('/checkmissresult')}}">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Missig result</span></a>
@@ -120,12 +120,7 @@
                     <span>Failed Semester</span></a>
             </li>
             
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
+           
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-@include('admin.css')
+<base href="/public">
+@include('admin.css');
 
 <body id="page-top">
 
@@ -9,7 +10,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        @include('admin.sidebar')
+       @include('admin.sidebar');
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -17,19 +18,22 @@
             <!-- Main Content -->
             <div id="content">
 
-                @include('admin.topbarnav')
+              @include('admin.topbarnav')
 
                 <!-- Begin Page Content -->
-                @if(session('message'))
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        {{ session('message') }}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                @endif
+                 <!-- /.container-fluid -->
+                
+                 @if(session('message'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('message') }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+@endif
 
-                <form action="{{url('/adddepartment')}}" method="POST">
+
+<form action="{{url('/updatedepartmentconfirm',$department->id)}}" method="POST">
                     @csrf
                     <div class="container">
 
@@ -41,30 +45,30 @@
                                     <div class="col-lg-7">
                                         <div class="p-5">
                                             <div class="text-center">
-                                                <h1 class="h4 text-gray-900 mb-4">Create a Department</h1>
+                                                <h1 class="h4 text-gray-900 mb-4">Update a Department</h1>
                                             </div>
                                             <form class="user" method="POST">
                                                 <div class="form-group row">
                                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                                        <input type="text" name="department_name" class="form-control form-control-user" placeholder="Department Name" required>
+                                                        <input type="text" name="department_name" class="form-control form-control-user" placeholder="Department Name" required value="{{$department->department_name}}">
                                                     </div>
                                                     <div class="col-sm-6">
-                                                        <input type="text" name="department_head" class="form-control form-control-user" placeholder="Department Head" required>
+                                                        <input type="text" name="department_head" class="form-control form-control-user" placeholder="Department Head" required value="{{$department->department_head}}">
                                                     </div>                                      
                                                 </div>
 
                                                 <div class="form-group row">
                                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                                        <input type="text" name="location" class="form-control form-control-user" placeholder="Location" required>
+                                                        <input type="text" name="location" class="form-control form-control-user" placeholder="Location" required value="{{$department->location}}">
                                                     </div>
                                                     <div class="col-sm-6">
-                                                        <input type="text" name="contact_number" class="form-control form-control-user" placeholder="Contact Number" required>
+                                                        <input type="text" name="contact_number" class="form-control form-control-user" placeholder="Contact Number" required value="{{$department->contact_number}}">
                                                     </div>                                      
                                                 </div>
 
                                                 <div class="form-group row">
                                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                                        <textarea name="description" class="form-control form-control-user" placeholder="Description" required></textarea>
+                                                        <textarea name="description" class="form-control form-control-user" placeholder="Description" required value="{{$department->description}}"></textarea>
                                                     </div>
                                                 </div>
 
@@ -82,6 +86,8 @@
                     </div>
                 </form>
             </div>
+            
+ 
 
         </div>
         <!-- End of Content Wrapper -->
@@ -94,7 +100,8 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    @include('admin.script')
+    
+@include('admin.script');
 
 </body>
 

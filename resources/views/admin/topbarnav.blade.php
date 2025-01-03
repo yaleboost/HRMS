@@ -21,10 +21,7 @@
 </form>
 
 
-<x-app-layout >
-<div style="width: 10px; height: 3px; background-color: red;"></div>
-
-</x-app-layout>
+  
 
 
 
