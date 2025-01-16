@@ -100,7 +100,7 @@
     <div id="collapseEmployee2" class="collapse" aria-labelledby="headingEmployee2" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Semester Fields:</h6>
-            <a class="collapse-item" href="{{url('viewesemester')}}">Register Semester</a>
+            <a class="collapse-item" href="{{url('viewsemester')}}">Register Semester</a>
             <a class="collapse-item" href="{{url('viewssemester')}}">Display Employee</a>
         </div>
     </div>
